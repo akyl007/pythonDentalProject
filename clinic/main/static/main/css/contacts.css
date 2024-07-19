@@ -1,0 +1,67 @@
+
+/* Основные стили для контейнера контактов */
+.contact-container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff; /* Цвет фона контейнера */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Стили для заголовка */
+.contact-container h2 {
+    color: #2a004a; /* Основной цвет */
+    margin-bottom: 20px;
+}
+
+.mainapp {
+    justify-content: center;
+    width: 100%;
+    justify-content: center;
+    height: 90vh;
+}
+.appointment-form{
+    margin-top: 150px;
+    max-width: 500px;
+    margin-left: 500px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Стили для карточки врача */
+.doctor-card {
+    background-color: #e7d5f9; /* Цвет фона карточки */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовка врача */
+.doctor-card h3 {
+    color: #87479d; /* Цвет заголовка врача */
+    margin-bottom: 10px;
+}
+
+/* Стили для текста контактов */
+.doctor-card p {
+    color: #2a004a; /* Основной цвет текста */
+    margin: 5px 0;
+}
+.background2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    background-color: #f7e3fd; /* Цвет фона */
+}
+.creates{
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+}
+header nav button a {
+    color: inherit; /* Устанавливаем цвет ссылки таким же, как у родительского элемента */
+    text-decoration: none; /* Убираем подчеркивание */
+}

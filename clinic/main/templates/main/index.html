@@ -1,0 +1,33 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %} Главная страница {% endblock %}
+
+
+{% block content %}
+<main>
+        <section class="hero">
+            <h1>Добро пожаловать в нашу стоматологию</h1>
+            <p>Мы предлагаем качественное лечение для всей семьи</p>
+            <button onclick="window.location.href='{% url 'appointment' %}'">Записаться на прием</button>
+        </section>
+        <section class="services">
+            <h2>Наши услуги</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Терапия</h3>
+                    <p>Качественное лечение зубов для детей и взрослых</p>
+                </div>
+                <div class="card">
+                    <h3>Ортодонтия</h3>
+                    <p>Исправление прикуса и установка брекетов</p>
+                </div>
+                <div class="card">
+                    <h3>Хирургия</h3>
+                    <p>Профессиональное удаление зубов и имплантация</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

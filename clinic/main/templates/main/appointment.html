@@ -1,0 +1,23 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %} Главная страница {% endblock %}
+
+
+{% block content %}
+<main class="mainapp">
+        <section class="appointment-form">
+            <h1>Запись на прием</h1>
+            <form method="post">
+                {% csrf_token %}
+                {{form.name}}<br>
+                {{form.phone}}<br>
+                {% for el in formGet %}
+                    <input type="checkbox" id="{{el.name}}" name="{{el.name}}">{{ el.name }}
+                {% endfor %}
+
+                <button onclick="window.location.href='{% url 'appointment_create' %}'" type="submit">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+{% endblock %}

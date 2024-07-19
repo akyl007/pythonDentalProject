@@ -1,0 +1,57 @@
+.background {
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+    background: linear-gradient(to bottom, #2a004a, #87479d, #ce84e1, #e7d5f9, #f7e3fd);
+     /* Цвет фона */
+}
+/** Основные стили для контейнера таблицы */
+.price-table-container {
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fff; /* Цвет фона контейнера */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовка */
+.price-table-container h2 {
+    text-align: center;
+    color: #2a004a; /* Основной цвет */
+    margin-bottom: 20px;
+}
+
+/* Стили для таблицы */
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Стили для заголовка таблицы */
+.price-table thead th {
+    background-color: #87479d; /* Цвет заголовка */
+    color: #fff; /* Цвет текста заголовка */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Стили для тела таблицы */
+.price-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ce84e1; /* Цвет линии между строками */
+}
+
+/* Альтернативный цвет строк */
+.price-table tbody tr:nth-child(odd) {
+    background-color: #e7d5f9;
+}
+
+/* Стили для ячеек таблицы */
+.price-table td {
+    color: #2a004a; /* Основной цвет текста */
+}
+
+/* Стили для первой колонки */
+.price-table tbody td:first-child {
+    font-weight: bold;
+}
