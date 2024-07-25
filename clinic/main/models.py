@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.validators import RegexValidator
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, Group
+
 
 class Doctor(models.Model):
         name = models.CharField('Имя', max_length=50)
@@ -36,7 +37,10 @@ class Service(models.Model):
         verbose_name = 'Услуга'
         verbose_name_plural = 'Услуги'
 
+
+
 class CustomUser(AbstractUser):
-    last_login = models.DateTimeField
-    login = models.CharField('Логин', max_length=100, blank=True, default='')
     phone = models.CharField('Номер телефона', max_length=17, blank=True, default='')
+
+    def __str__(self):
+        return self.username
