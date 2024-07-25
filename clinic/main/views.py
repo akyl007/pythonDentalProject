@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import DoctorForm, AppointmentForm, Services
+from .forms import DoctorForm, AppointmentForm, Service
 
 
 import clickatell
@@ -30,7 +30,7 @@ def pricing(request):
     return render(request, 'main/pricing.html')
 def appointment(request):
     form = AppointmentForm()
-    formGet = Services.objects.all()
+    formGet = Service.objects.all()
     error = ''
     if request.method == 'POST':
 
@@ -43,7 +43,7 @@ def appointment(request):
             error = form.errors
             print(error + "wow")
     if request.method == 'GET':
-        formGet = Services.objects.all()
+        formGet = Service.objects.all()
 
 
     data = {

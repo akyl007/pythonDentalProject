@@ -10,14 +10,25 @@
             <h1>Запись на прием</h1>
             <form method="post">
                 {% csrf_token %}
+                <div class="hie">
                 {{form.name}}<br>
                 {{form.phone}}<br>
+                    </div >
                 {% for el in formGet %}
-                    <input type="checkbox" id="{{el.name}}" name="{{el.name}}">{{ el.name }}
+                <label class="check">
+                    <input type="checkbox" id="{{el.name}}" name="{{el.name}}" value="{{el.name}}">{{el.name}}
+                    </label>
                 {% endfor %}
 
-                <button onclick="window.location.href='{% url 'appointment_create' %}'" type="submit">Отправить заявку</button>
+                 <div class="die">
+                    <button onclick="window.location.href='{% url 'appointment_create' %}'" type="submit">Отправить заявку</button>
+                 </div>
+
+                <p>Ориентировочная стоимость: </p>
+
             </form>
         </section>
+
+
     </main>
 {% endblock %}

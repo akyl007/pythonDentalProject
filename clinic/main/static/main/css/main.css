@@ -94,7 +94,7 @@ footer {
 }
 
 /* Стили для формы */
-form {
+form .hie, form .die{
     display: flex;
     flex-direction: column;
 }
