@@ -15,7 +15,7 @@
 
 - **Backend:** Django (Python)
 - **Frontend:** HTML, CSS
-- **База данных:** SQLite (можно заменить на PostgreSQL или MySQL)
+- **База данных:** PostgreSQL
 
 ## Установка
 
