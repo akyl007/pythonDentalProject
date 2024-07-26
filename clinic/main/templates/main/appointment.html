@@ -16,15 +16,17 @@
                     </div >
                 {% for el in formGet %}
                 <label class="check">
-                    <input type="checkbox" id="{{el.name}}" name="{{el.name}}" value="{{el.name}}">{{el.name}}
+                    <input type="checkbox" id="{{el.name}}" name="{{el.name}}"
+                           value="{{el.name}}">{{el.name}}
                     </label>
                 {% endfor %}
 
                  <div class="die">
-                    <button onclick="window.location.href='{% url 'appointment_create' %}'" type="submit">Отправить заявку</button>
+                    <button onclick="window.location.href='{% url 'appointment_create' %}'"
+                            type="submit">Отправить заявку</button>
                  </div>
 
-                <p>Ориентировочная стоимость: </p>
+                <p class="warning">{{error}} </p>
 
             </form>
         </section>

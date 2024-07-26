@@ -55,3 +55,29 @@
 .price-table tbody td:first-child {
     font-weight: bold;
 }
+
+.idle {
+    background-color: yellow; /* Yellow background for 'В обработке' */
+    border-radius: 8px;       /* Rounded corners */
+    padding: 5px;             /* Padding around the text */
+    text-align: center;       /* Center the text */
+    border: 1px solid #ccc;   /* Optional border */
+}
+
+.pending {
+    background-color: green;  /* Green background for 'pending' */
+    color: white;             /* White text color for contrast */
+    border-radius: 8px;       /* Rounded corners */
+    padding: 5px;             /* Padding around the text */
+    text-align: center;       /* Center the text */
+    border: 1px solid #ccc;   /* Optional border */
+}
+
+.cancel {
+    background-color: red;    /* Red background for 'cancel' */
+    color: white;             /* White text color for contrast */
+    border-radius: 8px;       /* Rounded corners */
+    padding: 5px;             /* Padding around the text */
+    text-align: center;       /* Center the text */
+    border: 1px solid #ccc;   /* Optional border */
+}

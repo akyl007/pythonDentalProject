@@ -195,12 +195,14 @@ nav ul li a, .mybut {
 .services h2 {
     font-size: 36px;
     margin-bottom: 40px;
+    text-decoration: none;
 }
 
 .service-cards {
     display: flex;
     justify-content: center;
     gap: 20px;
+    text-decoration: none;
 }
 
 .card {
